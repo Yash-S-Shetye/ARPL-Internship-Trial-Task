@@ -100,7 +100,7 @@ void display_table(std::vector<TopicMonitor> monitors, std::string status) {
 // Function to monitor all the frequencies
 int monitor_frequency() {
     ros::NodeHandle nh("~");
-    // Get yaml file from launcch file and check if it's accesed properly
+    // Get yaml file from launch file and check if it's accesed properly
     if (!nh.getParam("yaml_file", yaml_file)) {
         ROS_ERROR("Failed to retrieve 'yaml_file' parameter");
         return 1;
@@ -111,7 +111,7 @@ int monitor_frequency() {
     threshold_1 = topicsNode["threshold_1"].as<float>();
     threshold_2 = topicsNode["threshold_2"].as<float>();
 
-     // Get the MAV_NAME defined as environent variable
+     // Get the MAV_NAME defined as an environent variable
     if(!nh.getParam("mav_name", mav_name)) {
         ROS_ERROR("Failed to retrieve 'parameter_name' parameter");
         return 1;
