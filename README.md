@@ -1,2 +1,2 @@
 # ARPL-Internship-Trial-Task
-Ros1 C++ package for frequencies monitor display table
+C++ package for frequencies monitor display table compatible with both ROS1 and ROS2
