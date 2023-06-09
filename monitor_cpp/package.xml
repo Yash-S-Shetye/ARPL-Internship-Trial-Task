@@ -3,7 +3,7 @@
   <name>monitor_cpp</name>
   <version>0.0.0</version>
   <description>package</description>
-  <maintainer email="yashsshetye@gmail.com">Yash Shetye</maintainer>
+  <maintainer email="ys5153@nyu.edu">Yash Shetye</maintainer>
   <license>Open</license>
 
   <buildtool_depend>catkin</buildtool_depend>
