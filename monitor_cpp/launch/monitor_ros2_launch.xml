@@ -1,0 +1,15 @@
+<!-- Launch file to launch the C++ script -->
+
+<launch>
+
+  <arg name="MAV_NAME" default="quadrotor" />
+  <set_env name="mav_name" value="$(env MAV_NAME)" /> <!-- Getting MAV_NAME defined as an environment variable -->
+
+  <!-- Calling the C++ script -->
+  <node name="monitor_ros2_node" pkg="monitor_cpp" exec="monitor_ros2_node" output="screen">
+    <env name="my_param" value="$(env MAV_NAME)" /> <!-- Passing the mav_name to the C++ script -->
+  </node>
+  
+</launch>
+
+<!-- End of launch file -->
