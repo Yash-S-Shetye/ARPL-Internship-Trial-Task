@@ -162,7 +162,7 @@ int monitor_frequency() {
                 monitor.subscriber = nh.subscribe(monitor.topic, 1000, &TopicMonitor::callback<geometry_msgs::TwistStamped>, &monitor);
             }
             else {
-                ROS_ERROR("Unsupported message type: %s", monitor.msg_type.c_str());
+                ROS_ERROR("Unsupported msg_type: %s", monitor.msg_type.c_str());
             }
 
             float frequency = monitor.update_frequency();
