@@ -124,8 +124,8 @@ void monitor_frequency() {
     threshold_2 = topicsNode["threshold_2"].as<float>();
 
      // Get the MAV_NAME from user
-    if (std::getenv("my_param")) {
-        mav_name = std::getenv("my_param");
+    if (std::getenv("mav_name")) {
+        mav_name = std::getenv("mav_name");
     }
 
     auto node = std::make_shared<rclcpp::Node>("topic_monitor");
